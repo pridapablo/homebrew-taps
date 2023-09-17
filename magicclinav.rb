@@ -19,7 +19,7 @@ class Magicclinav < Formula
         $ nano ~/.zshrc
 
       2. Add the following line to source the magic-cli-nav script:
-        source #{opt_prefix}/bin/magic-cli-nav.sh
+        source #{opt_prefix}/#{version}/bin/magic-cli-nav.sh
 
       3. Save and exit the file.
 
