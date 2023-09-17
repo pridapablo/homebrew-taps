@@ -5,7 +5,7 @@ class Magicclinav < Formula
   sha256 "99d1f0506b943a0bd0f992f71dd108ba5958addcb06de8716034afd41567dbcb"
   license ""
 
-  # depends_on "zsh" => :run
+  depends_on "zsh" => :run
 
   def install
     bin.install "magic-cli-nav.sh"
@@ -21,7 +21,10 @@ class Magicclinav < Formula
       2. Add the following line to source the magic-cli-nav script:
         source #{prefix.realpath}/bin/magic-cli-nav.sh
 
-      3. Save and exit the file.
+      3. Save and exit the file. 
+      
+      4. Finally, reload your zshrc file:
+        $ source ~/.zshrc
 
       Now, you can use 'magic-cli-nav' in your terminal to navigate between directories quickly.
     EOS
