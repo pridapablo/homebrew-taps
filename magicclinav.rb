@@ -1,6 +1,3 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Magicclinav < Formula
   desc "A CLI tool to navigate between directories quickly"
   homepage "https://github.com/pridapablo/magic-cli-nav"
@@ -11,7 +8,23 @@ class Magicclinav < Formula
   # depends_on "zsh" => :run
 
   def install
-    bin.install "magic-cli-nav.sh" => "magic-cli-nav"
+    bin.install "magic-cli-nav.sh"
+  end
+
+  def caveats
+    <<~EOS
+      To use magic-cli-nav, you need to add it to your zshrc config as a source:
+
+      1. Open your zshrc file:
+         $ nano ~/.zshrc
+
+      2. Add the following line to source the magic-cli-nav script:
+         source $(brew --prefix magicclinav)/magic-cli-nav.sh
+
+      3. Save and exit the file.
+
+      Now, you can use 'magic-cli-nav' in your terminal to navigate between directories quickly.
+    EOS
   end
 
   test do
