@@ -10,15 +10,15 @@ Welcome to my personal Homebrew Taps repository! This is a collection of Homebre
 
 To use the formulas from this tap, first, add the tap to your Homebrew:
 
-\```sh
+```sh
 brew tap pridapablo/homebrew-taps
-\```
+```
 
 Then you can install any of the available formulas. For example:
 
-\```sh
+```sh
 brew install magicclinav
-\```
+```
 
 After installation, refer to the respective tool's repository for further setup and usage instructions.
 
